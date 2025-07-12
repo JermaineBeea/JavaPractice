@@ -13,6 +13,14 @@ public class TestKatas {
         assertEquals(-987654321, Katas.descendingOrder(-123456789));
     }
 
+    @Test 
+    public void testToCamelCase() {
+        assertEquals("helloWorld", KataSolutions.toCamelCase("hello world"));
+        assertEquals("javaProgramming", KataSolutions.toCamelCase("java programming"));
+        assertEquals("thisIsATest", KataSolutions.toCamelCase("this is a test"));
+        assertEquals("oneTwoThree", KataSolutions.toCamelCase("one two three"));
+    }
+
     @Test
     public void testVowelCount() {
         assertEquals(3, Katas.vowelCount("hello world"));

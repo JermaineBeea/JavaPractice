@@ -66,6 +66,42 @@ public class KataSolutions {
     }
         
 
+    /**
+     * Converts a string with words separated by non-alphabetic characters (such as '-' or '_')
+     * into camel case format. The first word remains unchanged, and each subsequent word starts
+     * with an uppercase letter, with all separators removed.
+     *
+     * For example:
+     * <pre>
+     * toCamelCase("the-stealth-warrior") returns "theStealthWarrior"
+     * toCamelCase("The_Stealth_Warrior") returns "TheStealthWarrior"
+     * </pre>
+     *
+     * @param s the input string to convert to camel case
+     * @return the camel case formatted string
+     */
+    static String toCamelCase(String s){
+    StringBuilder result = new StringBuilder();
+    for(int n = 0; n < s.length(); n++){
+        Character currentChar = s.charAt(n);
+        if(! Character.isAlphabetic(currentChar)){
+        result.append(Character.toUpperCase(s.charAt(n + 1)));
+        n++;
+        continue;
+        }
+        result.append(s.charAt(n));
+    }
+    
+    return result.toString();
+    }
+
+    static String toCamelCase2(String str){
+        String[] words = str.split("[-_]");
+        return Arrays.stream(words, 1, words.length)
+        .map(s -> s.substring(0, 1).toUpperCase() + s.substring(1))
+        .reduce(words[0], String::concat);
+    }
+
 
     // PROBLEM 2
     /**
@@ -164,7 +200,8 @@ public class KataSolutions {
     static String uniqueLetters2 (String str1, String str2) {
         String combined = (str1 + str2).toLowerCase();
         StringBuilder result = new StringBuilder();
-        combined.chars().distinct().sorted().filter(n -> Character.isAlphabetic(n)).forEach(k -> result.append((char) k));
+        // Missing sorting operation here - will not return alphabetically sorted result
+        combined.chars().distinct().filter(n -> Character.isAlphabetic(n)).forEach(k -> result.append((char) k));
         return result.toString();
     }
 
