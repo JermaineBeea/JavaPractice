@@ -17,6 +17,13 @@ public class Katas {
         return 0;
     }
 
+    static String toCamelCase(String s){
+        // TODO: Implement this method
+        return "";
+
+    }
+
+
     // PROBLEM 2
     /*
      * Count the number of vowels in a string

@@ -3,6 +3,8 @@ package za.co.wethinkcode;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.beans.Transient;
+
 public class TestKataSolutions {
 
     @Test
@@ -11,6 +13,14 @@ public class TestKataSolutions {
         assertEquals(-54321, KataSolutions.descendingOrder(-12345));
         assertEquals(987654321, KataSolutions.descendingOrder(123456789));
         assertEquals(-987654321, KataSolutions.descendingOrder(-123456789));
+    }
+
+    @Test 
+    public void testToCamelCase() {
+        assertEquals("helloWorld", KataSolutions.toCamelCase("hello world"));
+        assertEquals("javaProgramming", KataSolutions.toCamelCase("java programming"));
+        assertEquals("thisIsATest", KataSolutions.toCamelCase("this is a test"));
+        assertEquals("oneTwoThree", KataSolutions.toCamelCase("one two three"));
     }
     
     @Test
