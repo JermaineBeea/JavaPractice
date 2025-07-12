@@ -17,6 +17,21 @@ public class Katas {
         return 0;
     }
 
+    
+    /**
+     * Converts a string with words separated by non-alphabetic characters (such as '-' or '_')
+     * into camel case format. The first word remains unchanged, and each subsequent word starts
+     * with an uppercase letter, with all separators removed.
+     *
+     * For example:
+     * <pre>
+     * toCamelCase("the-stealth-warrior") returns "theStealthWarrior"
+     * toCamelCase("The_Stealth_Warrior") returns "TheStealthWarrior"
+     * </pre>
+     *
+     * @param s the input string to convert to camel case
+     * @return the camel case formatted string
+     */
     static String toCamelCase(String s){
         // TODO: Implement this method
         return "";
