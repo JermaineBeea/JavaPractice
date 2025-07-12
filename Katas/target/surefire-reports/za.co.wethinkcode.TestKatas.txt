@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: za.co.wethinkcode.TestKatas
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 0.124 s <<< FAILURE! -- in za.co.wethinkcode.TestKatas
-za.co.wethinkcode.TestKatas.testVowelCount -- Time elapsed: 0.045 s <<< FAILURE!
+Tests run: 9, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 0.068 s <<< FAILURE! -- in za.co.wethinkcode.TestKatas
+za.co.wethinkcode.TestKatas.testVowelCount -- Time elapsed: 0.006 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <3> but was: <0>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -160,7 +160,7 @@ org.opentest4j.AssertionFailedError: expected: <5 1> but was: <>
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-za.co.wethinkcode.TestKatas.testPangram -- Time elapsed: 0.002 s <<< FAILURE!
+za.co.wethinkcode.TestKatas.testPangram -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -239,7 +239,7 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-za.co.wethinkcode.TestKatas.testFindOutlier -- Time elapsed: 0.002 s <<< FAILURE!
+za.co.wethinkcode.TestKatas.testFindOutlier -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <11> but was: <0>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -397,7 +397,7 @@ org.opentest4j.AssertionFailedError: expected: <abcdefwxy> but was: <>
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-za.co.wethinkcode.TestKatas.testFindNextSquare -- Time elapsed: 0.001 s <<< FAILURE!
+za.co.wethinkcode.TestKatas.testFindNextSquare -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <121> but was: <0>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -555,7 +555,7 @@ org.opentest4j.AssertionFailedError: expected: <54321> but was: <0>
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-za.co.wethinkcode.TestKatas.testCreatePhoneNumber -- Time elapsed: 0.001 s <<< FAILURE!
+za.co.wethinkcode.TestKatas.testCreatePhoneNumber -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <(123) 456-7890> but was: <>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
