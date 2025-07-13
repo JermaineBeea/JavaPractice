@@ -15,24 +15,11 @@ public class Katas {
      * The number will not be zero.
      */
     static int descendingOrder(int number) {
-
-        number = Math.abs(number);
-        String strVal = String.valueOf(number);
-        StringBuilder result = new StringBuilder();
-        List<Integer> intList = new ArrayList<>();
-
-        strVal.chars().forEach(k-> intList.add(Integer.parseInt(String.valueOf(k))));
-        System.out.println("DEBUGGING: " + intList);
-        intList.stream().sorted(Comparator.reverseOrder()).forEach(k->result.append(k));
-
-        return (number > 0) ? Integer.parseInt(result.toString()): -Integer.parseInt(result.toString());
+        // TODO: Implement this method
+        return 0;
     }
 
-    public static void main(String[] args) {
-        System.out.println(descendingOrder(12345)); // Should print 54321
-    }
 
-    
     /**
      * Converts a string with words separated by non-alphabetic characters (such as '-' or '_')
      * into camel case format. The first word remains unchanged, and each subsequent word starts
