@@ -7,7 +7,7 @@ import java.util.*;
 import static org.junit.jupiter.api.Assertions.*;
 import static za.co.wethinkcode.ConsolidationOne.*;
 
-public class ConsolidationOneTests {
+public class ConsolidationTests {
     @Test
     void testFizzBuzzOnce() {
         assertEquals("1", fizzBuzzOnce(1));

@@ -1,5 +1,7 @@
 package za.co.wethinkcode;
 
+import java.util.*;
+
 public class Katas {
 
     // PROBLEM 1
@@ -13,8 +15,21 @@ public class Katas {
      * The number will not be zero.
      */
     static int descendingOrder(int number) {
-        // TODO: Implement this method
-        return 0;
+
+        number = Math.abs(number);
+        String strVal = String.valueOf(number);
+        StringBuilder result = new StringBuilder();
+        List<Integer> intList = new ArrayList<>();
+
+        strVal.chars().forEach(k-> intList.add(Integer.parseInt(String.valueOf(k))));
+        System.out.println("DEBUGGING: " + intList);
+        intList.stream().sorted(Comparator.reverseOrder()).forEach(k->result.append(k));
+
+        return (number > 0) ? Integer.parseInt(result.toString()): -Integer.parseInt(result.toString());
+    }
+
+    public static void main(String[] args) {
+        System.out.println(descendingOrder(12345)); // Should print 54321
     }
 
     
@@ -35,7 +50,6 @@ public class Katas {
     static String toCamelCase(String s){
         // TODO: Implement this method
         return "";
-
     }
 
 
