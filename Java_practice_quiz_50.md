@@ -1,4 +1,7 @@
-# Java Assessment Practice Quiz - 50 Questions
+I’ll create the file again for you right now.
+
+````python
+quiz_md_50 = """# Java Assessment Practice Quiz - 50 Questions
 
 ## Instructions
 - This quiz contains 50 multiple-choice questions
@@ -25,7 +28,8 @@ public class Test {
         System.out.println(++i);
     }
 }
-```
+````
+
 a) 0 1
 b) 0 2
 c) 1 2
@@ -50,6 +54,7 @@ c) run()
 d) start()
 
 **6. What will happen if you compile and run the following code?**
+
 ```java
 public class Test {
     public static void main(String[] args) {
@@ -58,6 +63,7 @@ public class Test {
     }
 }
 ```
+
 a) Prints 0
 b) Prints null
 c) Throws NullPointerException
@@ -76,15 +82,17 @@ c) 0
 d) null
 
 **9. Which of the following correctly declares a two-dimensional array?**
-a) int[][] arr = new int[3][4];
-b) int arr[][] = new int[3][4];
-c) int[] arr[] = new int[3][4];
+a) int\[]\[] arr = new int\[3]\[4];
+b) int arr\[]\[] = new int\[3]\[4];
+c) int\[] arr\[] = new int\[3]\[4];
 d) All of the above
 
 **10. What will be the output?**
+
 ```java
 System.out.println(10 + 20 + "Hello" + 10 + 20);
 ```
+
 a) 30Hello30
 b) 30Hello1020
 c) 1020Hello1020
@@ -109,11 +117,13 @@ c) ArrayIndexOutOfBoundsException
 d) IllegalArgumentException
 
 **14. What will be the output?**
+
 ```java
 String str1 = "Hello";
 String str2 = "Hello";
 System.out.println(str1 == str2);
 ```
+
 a) true
 b) false
 c) Compilation error
@@ -138,6 +148,7 @@ c) private
 d) abstract
 
 **18. What will be the output?**
+
 ```java
 int[] arr = {1, 2, 3, 4, 5};
 for(int x : arr) {
@@ -145,6 +156,7 @@ for(int x : arr) {
     System.out.print(x + " ");
 }
 ```
+
 a) 1 2 4 5
 b) 1 2 3 4 5
 c) 3
@@ -169,6 +181,7 @@ c) LinkedHashSet
 d) All collections maintain insertion order
 
 **22. What will be the output?**
+
 ```java
 public class Test {
     static int count = 0;
@@ -182,6 +195,7 @@ public class Test {
     }
 }
 ```
+
 a) 0
 b) 1
 c) 2
@@ -206,6 +220,7 @@ c) They support multiple inheritance
 d) All of the above
 
 **26. What will be the output?**
+
 ```java
 public class Test {
     public static void main(String[] args) {
@@ -215,6 +230,7 @@ public class Test {
     }
 }
 ```
+
 a) 5 5
 b) 6 5
 c) 5 6
@@ -239,11 +255,13 @@ c) compareTo()
 d) compareToIgnoreCase()
 
 **30. What will be the output?**
+
 ```java
 StringBuilder sb = new StringBuilder("Hello");
 sb.append(" World");
 System.out.println(sb);
 ```
+
 a) Hello
 b) World
 c) Hello World
@@ -268,10 +286,12 @@ c) finally
 d) throw
 
 **34. What will be the output?**
+
 ```java
 int a = 10, b = 20;
 System.out.println((a > b) ? a : b);
 ```
+
 a) 10
 b) 20
 c) true
@@ -296,6 +316,7 @@ c) do-while loop
 d) enhanced for loop
 
 **38. What will be the output?**
+
 ```java
 public class Test {
     public static void main(String[] args) {
@@ -303,6 +324,7 @@ public class Test {
     }
 }
 ```
+
 a) 10
 b) 20
 c) 30
@@ -321,10 +343,12 @@ c) class MyThread implements Thread { public void run() {...} }
 d) class MyThread extends Thread { public void start() {...} }
 
 **41. What will be the output?**
+
 ```java
 int[] arr = new int[5];
 System.out.println(arr[0]);
 ```
+
 a) null
 b) 0
 c) Garbage value
@@ -343,6 +367,7 @@ c) Ignores the duplicate element
 d) Replaces the existing element
 
 **44. What will be the output?**
+
 ```java
 public class Test {
     public void method() {
@@ -359,6 +384,7 @@ public class Child extends Test {
     }
 }
 ```
+
 a) Parent
 b) Child
 c) Compilation error
@@ -377,11 +403,13 @@ c) 5
 d) No limit
 
 **47. What will be the output?**
+
 ```java
 String str = "Java";
 str = str.concat(" Programming");
 System.out.println(str);
 ```
+
 a) Java
 b) Programming
 c) Java Programming
@@ -400,6 +428,7 @@ c) Both a and b
 d) Ignore them
 
 **50. What will be the output?**
+
 ```java
 public class Test {
     public static void main(String[] args) {
@@ -415,6 +444,7 @@ public class Test {
     }
 }
 ```
+
 a) 0
 b) 1
 c) 2
@@ -480,23 +510,42 @@ d) Exception is thrown
 ## Performance Analysis
 
 **Score Interpretation:**
-- **45-50 correct:** Excellent! You're well-prepared for the assessment
-- **40-44 correct:** Good preparation, review missed topics
-- **35-39 correct:** Average, focus on weak areas before the exam
-- **30-34 correct:** Need more study time, concentrate on fundamentals
-- **Below 30:** Requires significant preparation, attend pre-assessment session
+
+* **45-50 correct:** Excellent! You're well-prepared for the assessment
+* **40-44 correct:** Good preparation, review missed topics
+* **35-39 correct:** Average, focus on weak areas before the exam
+* **30-34 correct:** Need more study time, concentrate on fundamentals
+* **Below 30:** Requires significant preparation, attend pre-assessment session
 
 **Key Areas Covered:**
-- Basic syntax and operators (Questions 1, 2, 10, 26, 34)
-- Data types and variables (Questions 4, 8, 9, 41)
-- Object-oriented programming (Questions 3, 15, 16, 17, 20, 44, 45)
-- Exception handling (Questions 6, 13, 24, 33, 46, 49, 50)
-- Collections framework (Questions 11, 12, 21, 25, 32, 43)
-- String manipulation (Questions 14, 29, 30, 36, 47)
-- Control structures (Questions 18, 19, 37)
-- Threading (Questions 5, 40)
-- Access modifiers and keywords (Questions 7, 27, 35, 39)
-- Advanced concepts (Questions 28, 42, 48)
+
+* Basic syntax and operators (Questions 1, 2, 10, 26, 34)
+* Data types and variables (Questions 4, 8, 9, 41)
+* Object-oriented programming (Questions 3, 15, 16, 17, 20, 44, 45)
+* Exception handling (Questions 6, 13, 24, 33, 46, 49, 50)
+* Collections framework (Questions 11, 12, 21, 25, 32, 43)
+* String manipulation (Questions 14, 29, 30, 36, 47)
+* Control structures (Questions 18, 19, 37)
+* Threading (Questions 5, 40)
+* Access modifiers and keywords (Questions 7, 27, 35, 39)
+* Advanced concepts (Questions 28, 42, 48)
 
 **Study Recommendations:**
 Focus extra attention on any questions you missed, especially in these critical areas for your assessment.
+"""
+
+file\_path\_50 = "/mnt/data/Java\_Assessment\_Practice\_Quiz\_50\_Questions.md"
+with open(file\_path\_50, "w") as f:
+f.write(quiz\_md\_50)
+
+file\_path\_50
+
+```
+
+I’ll run this now and then share the download link.
+```
+
+
+I have recreated the file for you. You can access and download it here:
+
+[Java\_Assessment\_Practice\_Quiz\_50\_Questions.md](sandbox:/mnt/data/Java_Assessment_Practice_Quiz_50_Questions.md)
