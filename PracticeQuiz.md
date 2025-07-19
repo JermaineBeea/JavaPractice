@@ -1,4 +1,4 @@
-````markdown
+
 # Java Assessment Practice Quiz
 
 ## Instructions
