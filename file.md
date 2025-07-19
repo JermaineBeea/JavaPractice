@@ -1,8 +1,3 @@
-Got it! You want me to display the raw markdown text **exactly as it should appear in the file**, with no rendering or explanation — just like your example.
-
-Here is your Java question snippet in raw markdown format (exactly as you would type it in your `.md` file):
-
-````markdown
 **8. What will be the output of the following code?**  
 ```java
 System.out.println(10 + 20 + "30");
