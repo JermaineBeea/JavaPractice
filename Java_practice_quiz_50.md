@@ -1,6 +1,3 @@
-No worries! Here's the content of the quiz file directly — you can copy it and save it as a `.md` file on your computer:
-
-````markdown
 # Java Assessment Practice Quiz - Extended Version
 
 ## Instructions
