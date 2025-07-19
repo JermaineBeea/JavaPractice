@@ -1,33 +1,35 @@
+````markdown
 # Java Assessment Practice Quiz
 
 ## Instructions
-- This quiz contains 25 multiple-choice questions
-- Choose the best answer for each question
-- Time yourself for 30 minutes to simulate exam conditions
-- Answers are provided at the bottom
+- This quiz contains 25 multiple-choice questions  
+- Choose the best answer for each question  
+- Time yourself for 30 minutes to simulate exam conditions  
+- Answers are provided at the bottom  
 
 ---
 
 ## Questions
 
-**1. What is the correct way to declare a String variable in Java?**
-a) String str = "Hello";
-b) string str = "Hello";
-c) Str str = "Hello";
-d) STRING str = "Hello";
+**1. What is the correct way to declare a String variable in Java?**  
+a) String str = "Hello";  
+b) string str = "Hello";  
+c) Str str = "Hello";  
+d) STRING str = "Hello";  
 
-**2. Which of the following is NOT a primitive data type in Java?**
-a) int
-b) boolean
-c) String
-d) double
+**2. Which of the following is NOT a primitive data type in Java?**  
+a) int  
+b) boolean  
+c) String  
+d) double  
 
-**3. What will be the output of the following code?**
+**3. What will be the output of the following code?**  
 ```java
 int x = 5;
 int y = ++x;
 System.out.println(x + " " + y);
-```
+````
+
 a) 5 6
 b) 6 6
 c) 5 5
@@ -76,11 +78,13 @@ c) public
 d) default (package-private)
 
 **11. What will be the output of the following code?**
+
 ```java
 String str = "Hello";
 str.concat(" World");
 System.out.println(str);
 ```
+
 a) Hello World
 b) Hello
 c) World
@@ -117,10 +121,12 @@ c) HashSet
 d) Vector
 
 **17. What will be the output?**
+
 ```java
 int[] arr = {1, 2, 3, 4, 5};
 System.out.println(arr.length);
 ```
+
 a) 4
 b) 5
 c) 6
@@ -145,9 +151,11 @@ c) They can be overridden
 d) They must be public
 
 **21. What will be the output?**
+
 ```java
 System.out.println("Hello" + 1 + 2);
 ```
+
 a) Hello3
 b) Hello12
 c) 3Hello
@@ -212,19 +220,21 @@ d) The class cannot be instantiated
 ## Study Tips for Your Assessment
 
 **Key Areas to Focus On:**
-- Basic syntax and data types
-- Object-oriented programming concepts (inheritance, encapsulation, polymorphism)
-- Exception handling
-- Collections framework
-- String manipulation
-- Array operations
-- Control structures (loops, conditionals)
-- Method overloading vs. overriding
-- Static vs. instance members
+
+* Basic syntax and data types
+* Object-oriented programming concepts (inheritance, encapsulation, polymorphism)
+* Exception handling
+* Collections framework
+* String manipulation
+* Array operations
+* Control structures (loops, conditionals)
+* Method overloading vs. overriding
+* Static vs. instance members
 
 **Time Management:**
-- With 2 hours for the assessment, spend about 4-5 minutes per question maximum
-- Skip difficult questions initially and return to them
-- Read questions carefully - MCQs can have tricky wording
 
-Good luck with your assessment!
+* With 2 hours for the assessment, spend about 4-5 minutes per question maximum
+* Skip difficult questions initially and return to them
+* Read questions carefully - MCQs can have tricky wording
+
+
