@@ -1,5 +1,7 @@
 # Java Assessment Practice Quiz - Extended Version
 
+```markdown
+---
 ## Instructions
 - This quiz contains 30 multiple-choice questions
 - Choose the best answer for each question
@@ -56,11 +58,11 @@ d) ===
 ```java
 System.out.println(10 + 20 + "30");
 ```
-##
-a) 3030
-b) 102030
-c) 3030
-d) 3030
+
+*a) 3030
+*b) 102030
+*c) 3030
+*d) 3030
 
 **9. Which of the following is a marker interface?**
 a) Runnable
@@ -247,6 +249,7 @@ d) equal()
 30. b
 
 ```
+
 
 ---
 
