@@ -1,4 +1,6 @@
-Got it! Here is the entire raw markdown snippet in **one single code block** exactly as you can paste into your `.md` file:
+Got it! You want me to display the raw markdown text **exactly as it should appear in the file**, with no rendering or explanation — just like your example.
+
+Here is your Java question snippet in raw markdown format (exactly as you would type it in your `.md` file):
 
 ````markdown
 **8. What will be the output of the following code?**  
@@ -13,6 +15,5 @@ d) 3030
 
 ```
 
-Just copy everything inside this code block, including the triple backticks and markdown syntax, as-is.
+Just copy and paste all of the above exactly as-is into your markdown file.
 ```
-
