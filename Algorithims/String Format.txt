@@ -1,4 +1,3 @@
-
 STRING.FORMAT() FORMAT SPECIFIERS REFERENCE
 =============================================
 
@@ -53,4 +52,3 @@ PHONE NUMBER EXAMPLE
 --------------------
 String.format("(%d%d%d) %d%d%d-%d%d%d%d", ...)  // using integers
 String.format("(%c%c%c) %c%c%c-%c%c%c%c", ...)  // using characters
-```

@@ -1,0 +1,225 @@
+================================================================================
+                    JAVA COLLECTIONS REFERENCE GUIDE
+================================================================================
+
+A comprehensive guide to working with Arrays, ArrayLists, Collections, and 
+related utilities in Java.
+
+================================================================================
+TABLE OF CONTENTS
+================================================================================
+1. Arrays
+2. ArrayList
+3. Collections Utility
+4. Arrays Utility Methods
+5. Quick Comparison Table
+6. Common Pitfalls
+
+================================================================================
+1. ARRAYS
+================================================================================
+
+Initialize an Array
+-------------------
+int size = 0;
+Integer[] intArray = new Integer[size];
+
+Get Array Size
+--------------
+int sizeArray = intArray.length;
+
+================================================================================
+2. ARRAYLIST
+================================================================================
+
+Required Imports
+----------------
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Collections;
+
+Initialize an Empty ArrayList
+------------------------------
+ArrayList<Integer> intList = new ArrayList<>();
+
+Initialize ArrayList with Data
+-------------------------------
+Method 1: Using Arrays.asList()
+    ArrayList<Integer> intList = new ArrayList<>(Arrays.asList(1, 2, 3));
+
+Method 2: Using List.of()
+    ArrayList<Integer> intList = new ArrayList<>(List.of(1, 2, 3));
+
+NOTE: List.of(...) creates an immutable list, so you wrap it in 
+new ArrayList<>() to make it mutable.
+
+Find Element Index: indexOf()
+------------------------------
+Returns the index of the first occurrence of a value, or -1 if not found.
+
+Example:
+    ArrayList<Integer> arrayList = new ArrayList<>(Arrays.asList(2, 3, 5, 7, 7, 8));
+    int indx = arrayList.indexOf(7);
+    // indx = 3 (first occurrence of 7)
+
+Key Points:
+    - Returns the FIRST occurrence only
+    - Returns -1 if the value is not in the list
+    - Works with any object type (Integer, String, etc.)
+
+Remove Element: remove()
+------------------------
+Removes the element at the specified index.
+
+Example:
+    int indx = 2;
+    ArrayList<Integer> intList = new ArrayList<>(Arrays.asList(5, 6, 7, 8));
+    intList.remove(indx);
+    // intList -> [5, 6, 8]
+
+================================================================================
+3. COLLECTIONS UTILITY
+================================================================================
+
+Purpose
+-------
+Collections is a utility class that provides static methods for operating on 
+Collection types like List, Set, and Queue (not Map directly).
+
+Get Maximum Element
+-------------------
+ArrayList<Integer> intList = new ArrayList<>(Arrays.asList(3, 9, 2, 7));
+int max = Collections.max(intList);
+// max = 9
+
+Get Minimum Element
+-------------------
+int min = Collections.min(intList);
+
+Sort Ascending (List only)
+---------------------------
+Collections.sort(intList);
+
+Sort Descending (List only)
+----------------------------
+Collections.sort(intList, Collections.reverseOrder());
+
+Reverse List Order
+------------------
+Collections.reverse(intList);
+
+Shuffle Elements
+----------------
+Collections.shuffle(intList);
+
+Working with Maps
+-----------------
+For Map objects, use:
+    Collections.max(map.values());  // Get max value
+    Collections.max(map.keySet());  // Get max key
+
+Important Notes
+---------------
+    [✓] Elements must implement Comparable (Integer, String, Double already do)
+    [✓] Works with objects (Integer), not primitives (int)
+    [✓] Works with List, Set, Queue — not Map directly
+
+================================================================================
+4. ARRAYS UTILITY METHODS
+================================================================================
+
+Required Import
+---------------
+import java.util.Arrays;
+
+Sort Array (Ascending)
+----------------------
+int[] arr = {5, 2, 8, 1};
+Arrays.sort(arr);
+// arr -> [1, 2, 5, 8]
+
+Sort Object Array (Descending)
+-------------------------------
+Integer[] arr = {5, 2, 8, 1};
+Arrays.sort(arr, Collections.reverseOrder());
+
+NOTE: Descending sort requires an object array (Integer[]), not primitive (int[])
+
+Convert Array to List
+---------------------
+Works with OBJECT ARRAYS ONLY.
+
+Integer[] arr = {1, 2, 3};
+List<Integer> list = Arrays.asList(arr);
+
+Find Maximum (Primitive Array)
+-------------------------------
+int[] arr = {4, 7, 1, 9};
+int max = Arrays.stream(arr).max().getAsInt();
+
+Find Minimum (Primitive Array)
+-------------------------------
+int min = Arrays.stream(arr).min().getAsInt();
+
+Fill Array with Value
+---------------------
+int[] arr = new int[5];
+Arrays.fill(arr, 3);
+// arr -> [3, 3, 3, 3, 3]
+
+Compare Arrays
+--------------
+boolean isEqual = Arrays.equals(arr1, arr2);
+
+Important Notes
+---------------
+    [!] Arrays are FIXED SIZE (cannot grow or shrink)
+    [✓] Arrays utility works directly with primitive arrays (int[], double[])
+    [!] Arrays do NOT implement the Collection interface
+
+================================================================================
+5. QUICK COMPARISON TABLE
+================================================================================
+
+Feature             | Arrays          | ArrayList              | Collections
+--------------------|-----------------|------------------------|------------------
+Size                | Fixed           | Dynamic                | N/A (utility)
+Primitives          | YES             | NO (use Integer, etc.) | NO
+Sorting             | Arrays.sort()   | Collections.sort()     | Collections.sort()
+Max/Min             | stream().max()  | Collections.max()      | Collections.max()
+Mutability          | Fixed size      | Mutable                | Operates on collections
+
+================================================================================
+6. COMMON PITFALLS
+================================================================================
+
+1. Primitive vs Object Arrays
+   ---------------------------
+   Collections.reverseOrder() requires object arrays (Integer[]), 
+   not primitives (int[])
+
+2. Immutable Lists
+   ---------------
+   List.of() and Arrays.asList() create fixed-size/immutable lists
+   Wrap in new ArrayList<>() to make fully mutable
+
+3. Array Size
+   ----------
+   Arrays cannot change size after creation
+   Use ArrayList for dynamic sizing
+
+4. Collections vs Arrays
+   ----------------------
+   Collections utility works with Collection types (List, Set, Queue)
+   Arrays utility works with array types (int[], Integer[], etc.)
+
+================================================================================
+COMPATIBILITY
+================================================================================
+Java Version: Java 8+
+Last Updated: February 2026
+
+================================================================================
+END OF DOCUMENT
+================================================================================
