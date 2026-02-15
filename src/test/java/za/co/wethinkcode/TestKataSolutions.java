@@ -3,7 +3,6 @@ package za.co.wethinkcode;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.beans.Transient;
 
 public class TestKataSolutions {
 

@@ -1,6 +1,7 @@
 package za.co.wethinkcode;
 
-import java.util.*;
+
+
 
 public class Katas {
 
@@ -14,6 +15,7 @@ public class Katas {
      * Constraints: The number will be a 32-bit signed integer.
      * The number will not be zero.
      */
+
     static int descendingOrder(int number) {
         // TODO: Implement this method
         return 0;
@@ -36,7 +38,7 @@ public class Katas {
      */
     static String toCamelCase(String s){
         // TODO: Implement this method
-        return "";
+      return "";
     }
 
 
@@ -80,7 +82,6 @@ public class Katas {
      * uniqueLetters(a, b) => "abcdefghijklmnopqrstuvwxyz"
      */
     static String uniqueLetters(String str1, String str2) {
-        // TODO: Implement this method
         return "";
     }
 

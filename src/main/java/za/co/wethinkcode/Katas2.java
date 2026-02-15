@@ -1,8 +1,7 @@
 package za.co.wethinkcode;
 
-import java.util.*;
 
-public class Katas {
+public class Katas2 {
 
     // PROBLEM 1
     /**
@@ -15,7 +14,6 @@ public class Katas {
      * The number will not be zero.
      */
     static int descendingOrder(int number) {
-        // TODO: Implement this method
         return 0;
     }
 
