@@ -1,7 +1,9 @@
 package za.co.wethinkcode;
 
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Katas_2 {
 
@@ -25,7 +27,7 @@ public class Katas_2 {
         // TODO: Implement this method
         return null;
     }
-        
+
     /** PROBLEM 2
      * Sort a nested list of integer arrays by a specified index.
      * Given a list of integer arrays and an index, return the list sorted
@@ -43,5 +45,37 @@ public class Katas_2 {
         return null;
     }
 
+    /** PROBLEM 3
+     * Find the length of the longest arithmetic progression with a fixed difference.
+     * Given a list of integers and an integer k, return the length of the longest
+     * arithmetic progression where the difference between consecutive elements is k.
+     * For example, given [8, 1, -1, 0, 3, 6, 2, 4, 5, 7, 9] and k = 2,
+     * return 6 because the sequence [-1, 1, 3, 5, 7, 9] has length 6.
+     * Note: Duplicate values should not be counted multiple times.
+     * Convert the list to a set of unique values before processing.
+     * Note: The progression does not need to be contiguous in the original list.
+     * Constraints: The list may contain negative and positive 32-bit signed integers.
+     * The difference k may be positive, negative, or zero.
+     */
+    public static int findLongestArithmeticProgression(List<Integer> arr, int k) {
+        // TODO: Implement this method
+        return 0;
+    }
 
+    /** PROBLEM 4
+     * Find the length of the longest sequence with a fixed absolute difference.
+     * Given a list of integers and an integer diff, return the length of the longest
+     * sequence such that the absolute difference between consecutive elements is diff.
+     * For example, given [1, 5, 3, 4, 2] and diff = 1,
+     * a valid sequence is [1, 2, 3, 4, 5] with length 5.
+     * Note: Duplicate values should not be counted multiple times.
+     * Convert the list to a set of unique values before processing.
+     * Note: The sequence does not need to be contiguous in the original list.
+     * Constraints: The list may contain negative and positive 32-bit signed integers.
+     * The difference diff will be a non-negative integer.
+     */
+    public static int findLongestConsecutiveAbsoluteDifference(int diff, List<Integer> arr) {
+        // TODO: Implement this method
+        return 0;
+    }
 }
