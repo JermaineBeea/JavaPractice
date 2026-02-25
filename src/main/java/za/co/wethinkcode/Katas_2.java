@@ -78,4 +78,34 @@ public class Katas_2 {
         // TODO: Implement this method
         return 0;
     }
+
+    /** PROBLEM 5
+     * Determine the index of a target value in a list of integers manually.
+     * Given a list of integers and a target integer, return the index of the target
+     * in the list. If the target does not exist in the list, return -1.
+     * For example, given [4, 2, 7, 1] and target 7, return 2.
+     * Given [4, 2, 7, 1] and target 5, return -1.
+     * Note: Do not use built-in index-finding methods.
+     * Constraints: The list may contain negative and positive 32-bit signed integers.
+     * The target will be a 32-bit signed integer.
+     */
+    public static int manualIndexDetermination(List<Integer> nums, int target) {
+        // TODO: Implement this method
+        return -1;
+    }
+
+    /** PROBLEM 6
+     * Find the peak element in a bitonic array.
+     * Given a list of integers that first strictly increases then strictly decreases
+     * (a bitonic array), return the index of the maximum element (the peak).
+     * The solution should run in O(log n) time.
+     * For example, given [1, 3, 5, 4, 2], return 2 because counts[2] = 5 is the peak.
+     * Note: The array is guaranteed to be bitonic and contain at least three elements.
+     * Constraints: Each element in the list is a 32-bit signed integer.
+     */
+    public static int findPeakIndex(List<Integer> counts) {
+        // TODO: Implement this method
+        return 0;
+    }
+
 }
