@@ -108,4 +108,11 @@ public class Katas2 {
         return 0;
     }
 
+    /** PROBLEM 7
+     * 
+     */
+    public static int maxDistinctSubstringLengthInSessions(String sessionString) {
+        return 0;
+    }
+
 }

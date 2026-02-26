@@ -60,4 +60,14 @@ public class TestKatas2SolutionsSolutions {
         assertEquals(4, Katas2Solutions.findPeakIndex(Arrays.asList(1, 2, 3, 4, 5, 4)));
         assertEquals(5, Katas2Solutions.findPeakIndex(Arrays.asList(0, 2, 4, 6, 8, 10, 9, 7, 5, 3, 1)));
     }
+
+    @Test
+    public void testMaxDistinctSubstringLengthInSessions() {
+        assertEquals(3, Katas2Solutions.maxDistinctSubstringLengthInSessions("abcabcbb"));
+        assertEquals(5, Katas2Solutions.maxDistinctSubstringLengthInSessions("abcde"));
+        assertEquals(1, Katas2Solutions.maxDistinctSubstringLengthInSessions("aaaaa"));
+        assertEquals(0, Katas2Solutions.maxDistinctSubstringLengthInSessions(""));
+        assertEquals(1, Katas2Solutions.maxDistinctSubstringLengthInSessions("x"));
+        assertEquals(11, Katas2Solutions.maxDistinctSubstringLengthInSessions("abcdeafghijk"));
+    }
 }
