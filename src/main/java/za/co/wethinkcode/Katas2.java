@@ -7,6 +7,29 @@ import java.util.Set;
 
 public class Katas2 {
 
+    /** PROBLEM 0
+     * Determine nth value of fibonacci sequence, where f(0) = 1 and f(1) = 2.
+     */
+    public static int findNthFibonacci(int indx){
+        int x_0 = 1;
+        int x_1 = 2;
+
+        if(indx == 0) return x_0;
+        if(indx == 1) return x_1;
+
+        int result = x_0 + x_1;
+
+        for(int n = 0; n < indx - 2; n++){
+            x_0 = x_1;
+            x_1 = result;
+            result = x_0 + x_1;
+        }
+
+        return result;
+    }
+
+
+
     /** PROBLEM 1
      * Merge all overlapping intervals in a list of integer pairs.
      * Given a list of intervals where each interval is [start, end],
@@ -109,9 +132,40 @@ public class Katas2 {
     }
 
     /** PROBLEM 7
-     * 
+         * Find the length of the longest substring with all distinct characters.
+         * Given a string representing session activity, return the length of the
+         * longest substring that contains no repeating characters.
+         * For example, given "abcabcbb", return 3 because "abc" is the longest
+         * substring without repeating characters.
+         * Given "bbbbb", return 1.
+         * Note: The substring must be contiguous.
+         * Constraints: The string may contain any valid ASCII characters.
+         * The input string may be empty.
      */
     public static int maxDistinctSubstringLengthInSessions(String sessionString) {
+        // TODO: Implement this method
+        return 0;
+    }
+
+     /** PROBLEM 8
+         * Task Scheduler with Cooldown and Multiple Machines.
+         * Given a list of task types and integers m and k, return the minimum
+         * number of time units required to complete all tasks. Each time unit
+         * can process up to m tasks in parallel (one per machine). A machine
+         * cannot process the same task type again for k time units after executing it.
+         * For example, given tasks = [1, 1, 2, 1], m = 2, k = 2,
+         * return 3.
+         * For example, given tasks = [1, 1, 1, 2, 2, 3], m = 3, k = 2,
+         * return 2.
+         * Note: Tasks of the same type are identical.
+         * Machines operate independently but each respects its own cooldown rule.
+         * Constraints: Task types are 32-bit signed integers.
+         * m will be greater than or equal to 1.
+         * k will be greater than or equal to 0.
+         * The task list may contain duplicates.
+     */
+    public static int calculateMinimumTimeUnits(List<Integer> tasks, int m, int k) {
+        // TODO: Implement this method
         return 0;
     }
 

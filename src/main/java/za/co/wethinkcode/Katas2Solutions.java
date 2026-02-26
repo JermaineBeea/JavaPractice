@@ -8,6 +8,26 @@ import java.util.Set;
 
 public class Katas2Solutions {
 
+    /** PROBLEM 0
+     */
+    public static int findNthFibonacci(int indx){
+        int x_0 = 1;
+        int x_1 = 2;
+
+        if(indx == 0) return x_0;
+        if(indx == 1) return x_1;
+
+        int result = x_0 + x_1;
+
+        for(int n = 0; n < indx - 2; n++){
+            x_0 = x_1;
+            x_1 = result;
+            result = x_0 + x_1;
+        }
+
+        return result;
+    }
+
     // Problem 1
     public static List<List<Integer>> mergeIntervals(List<List<Integer>> intervals) {
         intervals.sort(Comparator.comparingInt(a -> a.get(0))); // sort by start time
@@ -83,6 +103,7 @@ public class Katas2Solutions {
         return 0;
     }
 
+    
     /** PROBLEM 7
      */
     public static int maxDistinctSubstringLengthInSessions(String sessionString) {
@@ -101,6 +122,14 @@ public class Katas2Solutions {
         }
         
         return maxLen;
-}
+    }
+
+
+    /** PROBLEM 8
+     */
+    public static int calculateMinimumTimeUnits(List<Integer> tasks, int m, int k) {
+        // TODO: Implement this method
+        return 0;
+    }
 
 }

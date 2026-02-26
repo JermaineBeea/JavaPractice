@@ -70,4 +70,11 @@ public class TestKatas2SolutionsSolutions {
         assertEquals(1, Katas2Solutions.maxDistinctSubstringLengthInSessions("x"));
         assertEquals(11, Katas2Solutions.maxDistinctSubstringLengthInSessions("abcdeafghijk"));
     }
+
+    @Test
+    public void testFindNthFibonacci(){
+        // 1 2 3 5 8 13 21 34
+        assertEquals(34, Katas2Solutions.findNthFibonacci(7));
+        assertEquals(8, Katas2Solutions.findNthFibonacci(4));
+    }
 }
