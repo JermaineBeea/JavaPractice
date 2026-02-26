@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class Kata_2_solutions {
+public class Katas2Solutions {
 
     // Problem 1
     public static List<List<Integer>> mergeIntervals(List<List<Integer>> intervals) {
@@ -39,4 +39,32 @@ public class Kata_2_solutions {
         return nested;
     }
     
+
+    /** PROBLEM 3
+     */
+    public static int findLongestArithmeticProgression(List<Integer> arr, int k) {
+        // TODO: Implement this method
+        return 0;
+    }
+
+    /** PROBLEM 4
+     */
+    public static int findLongestConsecutiveAbsoluteDifference(int diff, List<Integer> arr) {
+        // TODO: Implement this method
+        return 0;
+    }
+
+    /** PROBLEM 5
+     */
+    public static int manualIndexDetermination(List<Integer> nums, int target) {
+        // TODO: Implement this method
+        return -1;
+    }
+
+    /** PROBLEM 6
+     */
+    public static int findPeakIndex(List<Integer> counts) {
+        // TODO: Implement this method
+        return 0;
+    }
 }

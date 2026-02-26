@@ -5,7 +5,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
-public class Katas_2 {
+public class Katas2 {
 
     /** PROBLEM 1
      * Merge all overlapping intervals in a list of integer pairs.
