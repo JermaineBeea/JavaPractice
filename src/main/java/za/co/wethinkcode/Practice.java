@@ -5,42 +5,19 @@ import java.util.ArrayList;
 
 public class Practice{
 
-    private static int maxConsecutiveUnique(List<Character> listChar){
-        ArrayList<Character> uniqueChars = new ArrayList<>();
-        int count = 0;
-        for(char k: listChar){
-            if(uniqueChars.contains(k)){
-                break;
-            }else{
-                uniqueChars.add(k);
-                count++;
-            }
-        }
-
-        return count;
-    }
-
-    public static int maxDistinctSubstringLengthInSessions(String sessionString) {
-        int sessionSize = sessionString.length();
-        ArrayList<Character> letters = new ArrayList<>();
-        for(char k: sessionString.toCharArray()) letters.add(k);
-        int count = maxConsecutiveUnique(letters);
-        for(int n = 0; n<sessionSize - 1;n++){
-            sessionSize -= 1;
-            if(sessionSize < count) return count;
-            
-            letters.removeFirst();
-            int newCount = maxConsecutiveUnique(letters);
-
-            if(newCount > count) count = newCount;
-
-        }
-        return count;
+    /** PROBLEM 8
+     */
+    public static int calculateMinimumTimeUnits(List<Integer> tasks, int m, int k) {
+        // TODO: Implement this method
+        return 0;
     }
 
     public static void main(String[] args)throws Exception {
-        String chars = "abcdfedcbaefg";
-        int result = maxDistinctSubstringLengthInSessions(chars);
+        List<Integer> tasks = List.of(1, 1, 1, 2, 2, 3);
+        int machines = 3;
+        int coolDown = 2;
+
+        int result = calculateMinimumTimeUnits(tasks, machines, coolDown);
         System.out.println("Result: " + result);
     }
 }

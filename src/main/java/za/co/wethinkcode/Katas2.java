@@ -29,7 +29,6 @@ public class Katas2 {
     }
 
 
-
     /** PROBLEM 1
      * Merge all overlapping intervals in a list of integer pairs.
      * Given a list of intervals where each interval is [start, end],
